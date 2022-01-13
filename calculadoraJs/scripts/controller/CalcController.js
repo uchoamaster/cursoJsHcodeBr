@@ -38,6 +38,10 @@ class CalcController {
         console.log(this._operation);
     }
 
+    getLastOperation(){
+        return this._operation[this._operation.length-1];
+    }
+
     clearAll(){
         this._operation = [];
     }
